@@ -1,29 +1,17 @@
-import React from 'react';
-import Link from 'next/link';
+import Link from 'next/link'
+import Image from 'next/image'
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <>
-         <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/about">
-          <a>About Us</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/blog">
-          <a>Blog Post</a>
-        </Link>
-      </li>
-    </ul>
-
-    </>
-  )
+    <nav>
+      <div className="logo">
+        <Image src="/vercel.svg" alt="site logo" width={128} height={77} />
+      </div>
+      <Link href="/"><a>Home</a></Link>
+      <Link href="/about"><a>About</a></Link>
+      <Link href="/ninjas/"><a>Ninja Listing</a></Link>
+    </nav>
+  );
 }
-
-export default Navbar
+ 
+export default Navbar;
