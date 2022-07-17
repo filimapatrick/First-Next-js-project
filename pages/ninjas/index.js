@@ -28,28 +28,3 @@ const Ninjas = ({ ninjas }) => {
  
 export default Ninjas;
 
-
-
-
-// export const getStaticProps = async () => {
-//   const res = await fetch('https://api.github.com/repos/zeit/next.js')
-//   const json = await res.json()
-//   return {
-//     props: {
-//       stars: json.stargazers_count
-//     }
-//   }
-
-
-// const Ninjas = ({stars}) => {
-//     return (
-//       <div>
-//         <h1>All Ninjas</h1>
-//         {
-//           stars.map(star => <li key={star.id}>{star.name}</li>)
-//         }
-//       </div>
-//     );
-//   }
-   
-//   export default Ninjas;
